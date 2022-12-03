@@ -10,15 +10,44 @@
     --button-click-color: #404BBF;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* body */
+
 body{
     background-color: var(--neutral-color);
     color: var(--navyblue-color);
     font-family: 'Roboto', sans-serif;
 }
 
-.logo, .nav-page, .contact-link, .portfolio-item-page{
+/* .logo, .nav-page, .contact-link, .portfolio-item-page{
     text-decoration: none;
-}
+} */
+
+/* ---header--- */
 
 .logo{
     text-transform: uppercase;
@@ -36,11 +65,11 @@ body{
     color: var(--navyblue-color);
 }
 
-.nav-list, .contact-list, .advantage-list,
+/* .nav-list, .contact-list, .advantage-list,
 .product-list, .team-list, .filter-button-list,
 .portfolio-list {
     list-style: none;
-}
+} */
 
 .nav-page{
     color: var(--navyblue-color);
@@ -67,6 +96,10 @@ body{
 .contact-link:hover, .contact-link:focus{
     color: var(--iris-color);
 }
+
+/* ---main--- */
+
+/* ===main-section=== */
 
 .main-section{
     background-color: var(--navyblue-color);
@@ -97,6 +130,8 @@ body{
     background-color: var(--button-click-color);
 }
 
+/* ===advantage-section=== */
+
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -123,12 +158,16 @@ body{
     line-height: 1.5;
 }
 
+/* ===product-seclion=== */
+
 .title-products{
     color: var(--navyblue-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
 }
+
+/* ===team-section=== */
 
 .team-section{
     background-color: var(--cloud-color);
@@ -153,6 +192,8 @@ body{
     font-size: 16px;
     line-height: 1.5;
 }
+
+/* ---footer--- */
 
 .footer{
     background-color: var(--navyblue-color);
