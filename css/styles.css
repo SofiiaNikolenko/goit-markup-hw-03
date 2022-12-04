@@ -131,7 +131,7 @@ body{
     font-weight: 700;
     font-size: 56px;
     line-height: 1;
-    width: 492px;
+    max-width: 492px;
     margin: 0 auto;
     padding-bottom: 48px;
     text-align: center;
@@ -297,6 +297,13 @@ body{
 
  /* portfolio */
 
+ .filter-button-list{
+    display: flex;
+    gap: 24px;
+    padding: 96px 0 72px 0;
+    justify-content: center;
+ }
+
 .filter-button{
     background-color: var(--cloud-color);
     color: var(--iris-color);
@@ -304,12 +311,28 @@ body{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
-
+    border: 1px solid var(--coornflower-color);
+    padding: 12px 24px;
+    border-radius: 4px;
 }
 
 .filter-button:hover, .filter-button:focus{
     background-color: var(--iris-color);
     color: var(--neutral-color);
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+
+.portfolio-item-text{
+    padding: 32px 16px;
+    border: 0.5px solid var(--cloud-color);
+    border-top: none;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item-title{
